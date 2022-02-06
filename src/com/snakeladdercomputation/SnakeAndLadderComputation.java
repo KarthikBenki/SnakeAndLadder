@@ -23,13 +23,18 @@ public class SnakeAndLadderComputation {
 		else {
 			position = position;
 		}
+		if(position < 0) {
+			position =0;
+		}
 	}
 
 	public static void main(String[] args) {
+		while(position<100) {
 		int dice = diceRoll();
 		System.out.println("dice= "+dice);
 		optionCheck(dice);
 		System.out.println("position = "+position);
+		}
 		
 		
 		
